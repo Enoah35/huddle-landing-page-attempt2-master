@@ -1,0 +1,107 @@
+@import "config";
+
+// Reset values
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// General CSS
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background: $bg-desktop no-repeat center center/cover, $color-violet;
+  background-size: cover;
+  // min-height: 100vh;
+  line-height: 1.5;
+}
+
+// Utility Class
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px 60px;
+  color: $color-violet;
+  border: 2px solid $color-violet;
+  border-radius: 40px;
+  box-shadow: 0 17px 10px -10px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+  font-size: 16px;
+
+  &:hover {
+    background: $color-soft-magenta;
+    color: #fff;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+// Main CSS
+.logo {
+  margin: 3rem 0 3rem 15rem;
+}
+
+.flex-container {
+  display: flex;
+  max-width: $max-width;
+  margin: auto;
+}
+.mockup {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  padding: 3rem;
+  color: #fff;
+
+  h1 {
+    padding-right: 15rem;
+  }
+  p {
+    padding-right: 10rem;
+  }
+  .btn {
+    margin: 2rem 0;
+  }
+}
+
+.socials {
+  padding: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  .fa-stack:hover,
+  i:hover {
+    color: $color-soft-magenta;
+  }
+}
+
+// Footer
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import "mobile";

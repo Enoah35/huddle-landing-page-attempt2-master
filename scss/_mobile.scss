@@ -1,0 +1,43 @@
+// Squish max around 1050px
+
+@media (max-width: 1050px) {
+  body {
+    background: $bg-mobile no-repeat center center / cover, $color-violet;
+  }
+
+  .logo {
+    margin: 0;
+    width: 50%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+
+    .mockup {
+      padding: 1.5rem;
+      height: auto;
+      width: auto;
+    }
+
+    .main {
+      h1 {
+        padding: 0;
+        text-align: center;
+      }
+
+      p {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      .btn {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+  .socials {
+    padding: 0;
+    justify-content: center;
+  }
+}
